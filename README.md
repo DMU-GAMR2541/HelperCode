@@ -1,1 +1,2 @@
-# HelperCode
+Lab and assignment beginning code.
+
