@@ -21,8 +21,7 @@ void Projectile::draw(sf::RenderTarget& target) const {
 	target.draw(sprite_projectile);
 }
 
-//Set the angle of the projectile.
-
+//Set the rotation.
 void Projectile::setRotation(float f_angle) {
 	this->f_rotation = f_angle;
 	// Calculate initial velocity based on rotation and speed
@@ -38,10 +37,12 @@ void Projectile::setInitialPos(sf::Vector2f v2_pos) {
 
 }
 
+//initial location of the projectile.
 sf::Vector2f Projectile::getPosition() {
 	return position;
 }
 
+//Setting amd getting firing. 
 bool Projectile::isFired()
 {
 	return b_fired;

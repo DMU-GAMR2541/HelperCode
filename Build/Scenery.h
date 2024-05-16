@@ -7,6 +7,7 @@ public:
 	Scenery() = default;
 	virtual ~Scenery() = default;
 
+	//Create a scenery object.
 	Scenery(sf::Vector2f& v2_position, float& f_rotation, sf::Vector2f& v2_scale, std::string& str_imageLoc) {
 		this->setPosition(v2_position);
 		this->setRotation(f_rotation);

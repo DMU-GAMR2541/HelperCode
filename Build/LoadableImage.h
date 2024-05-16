@@ -12,7 +12,6 @@ public:
 		if (!tex.loadFromFile(str_imageLocation)) {
 			std::cout << "Error loading the image!" << std::endl;
 		}
-		//loadableSprite.setTexture(txt_load);
 		txt_load = std::make_shared<sf::Texture>(tex);
 		return txt_load;
 	}
@@ -21,7 +20,6 @@ public:
 		if (!tex.loadFromFile(str_imageLocation)) {
 			std::cout << "Error loading the image!" << std::endl;
 		}
-		//loadableSprite.setTexture(txt_load);
 		txt_load = std::make_shared<sf::Texture>(tex);
 	}
 

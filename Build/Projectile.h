@@ -29,38 +29,20 @@ public:
 	void draw(sf::RenderTarget& target) const;
 
 
-	////Overload the constructor.
-	//Projectile(float f_projectSpeed, sf::Vector2f v2_scale, sf::Vector2f v2_position);
+	//Overload the constructor.
 
-	////Set the angle of the projectile.
+	//Set the angle of the projectile.
 	void setRotation(float f_angle);
 
 	sf::Vector2f getPosition();
 
+	//Set the initial position
 	void setInitialPos(sf::Vector2f v2_pos);
 
-	////Move the projectile in the defined direction. 
-	//void moveProjectile();
-
-	////Return the projectile shape.
-	//sf::CircleShape getProjectile();
-
-	//sf::Sprite getSprite();
-
-	//void setSpriteLoc(sf::Vector2f v2_pos);
-
-	//void setSpeed(float f_speed);
-
-	//void rotateSprite(float f_rotation);
-
-	//void Projectile::setVelocity(sf::Vector2f v2_velocity);
-
-	//sf::Vector2f Projectile::getVelocity();
-
-	//float getSpeed();
-
+	//Check if the projectile is fired.
 	bool isFired();
 
+	//Fire the projectile.
 	void fire(bool b_fired);
 
 };
