@@ -19,8 +19,8 @@ int main()
 	bool b_invOpen = true;
 	sf::RenderWindow window(sf::VideoMode(3400, 2400, 16), "Game Demo", sf::Style::Close); //Draw an SFML window.
 	window.setKeyRepeatEnabled(false);
-	float f_playerSpeed = 0.001f;
-	float f_enemySpeed = 0.001f;
+	float f_playerSpeed = 0.01f;
+	float f_enemySpeed = 0.01f;
 	float f_imageRot = 0.f;
 	unsigned int i_enemyNum = 6;
 	sf::Vector2u u2_windowSize = window.getSize();
