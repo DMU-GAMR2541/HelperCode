@@ -16,7 +16,7 @@ bool contained(sf::Vector2f v2A, const sf::RenderWindow& window) {
 int main()
 {
 	bool b_invOpen = true;
-	sf::RenderWindow window(sf::VideoMode(3400, 2400, 16), "Game Demo", sf::Style::Close); //Draw an SFML window.
+	sf::RenderWindow window(sf::VideoMode(1920, 1080, 16), "Game Demo", sf::Style::Close); //Draw an SFML window.
 	window.setKeyRepeatEnabled(false);
 	float f_playerSpeed = 0.001f;
 	float f_enemySpeed = 0.001f;
@@ -34,23 +34,6 @@ int main()
 	std::unique_ptr<Player> player(new Player(v2_playerStart,f_imageRot,v2_imageScale, str_playerImage, f_playerSpeed, u2_windowSize));
 	std::unique_ptr<Enemy> enemy (new Enemy(v2_enemyStart, f_imageRot, v2_imageScale, str_enemyImage, f_enemySpeed, u2_windowSize));
 	std::unique_ptr<Scenery> sceneryTile(new Scenery(v2_tilePosition, f_imageRot, v2_imageScale, str_sceneryImage));
-
-	//*************//
-	//LoadableImage li;
-	//li.loadImageText("../Assets/topdown/Spritesheet/spritesheet_tiles.png");
-	//sf::Sprite spriteTest, spriteTest2;
-
-	//sf::IntRect rect(sf::Vector2i(0, 0), sf::Vector2i(100, 100));
-	//sf::IntRect rect2(sf::Vector2i(0, 0), sf::Vector2i(500, 200));
-	//spriteTest.setTexture(*li.textureCreated());
-	//spriteTest.setTextureRect(rect);
-	//spriteTest.setPosition(sf::Vector2f(200.f, 200.f));
-
-	//
-	//spriteTest2.setTexture(*li.textureCreated());
-	//spriteTest2.setTextureRect(rect2);
-	//spriteTest2.setPosition(sf::Vector2f(500.f, 500.f));
-	//*************//
 
 	Projectile proj(player->getPosition(), 0.f, 0.5f, "../Assets/topdown/PNG/Tiles/tile_132.png");
 
